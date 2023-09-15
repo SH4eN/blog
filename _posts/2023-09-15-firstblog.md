@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "firstblogE"
+title: "firstblog"
 date: 2023-09-15
 ---
 * red
