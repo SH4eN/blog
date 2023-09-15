@@ -5,3 +5,9 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+
+body{
+  background: #333;
+  color: #eee;
+}
