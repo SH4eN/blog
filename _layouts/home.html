@@ -28,14 +28,14 @@ layout: base
       {%- for post in posts -%}
       <div class="card">
         <div class="card-content-conteiner">
-          <div class="card-author-nav">
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-          </div>
           <h2 class="card-title">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
           </h2>
+          <div class="card-author-nav">
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+          </div>
           {%- if site.show_excerpts -%}
             <p class="card-content"> {{ post.excerpt }} </p>
           {%- endif -%}
