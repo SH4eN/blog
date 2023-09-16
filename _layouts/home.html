@@ -22,22 +22,30 @@ layout: base
       <div id="typewriter-text" class="typewriter blink"></div>
       <p>(你可以給各格線指定一個固定的軌道大小，例如像素（pixel）)</p>
     </div>
-    <ul class="post-list">
+  
+    <div class="cards-conteiner">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+      <div class="card">
+        <div class="card-content-conteiner">
+          <div class="card-author-nav">
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+          </div>
+          <h2 class="card-title">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h2>
+          {%- if site.show_excerpts -%}
+            <p class="card-content"> {{ post.excerpt }} </p>
+          {%- endif -%}
+          <button class="card-btn">
+            <a href="{{ post.url | relative_url }}">閱讀更多</a>
+          </button>
+        </div>
+      </div>
       {%- endfor -%}
-    </ul>
+    </div>
 
     {% if site.paginate %}
       <div class="pager">
