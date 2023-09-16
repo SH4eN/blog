@@ -72,6 +72,7 @@
     background-color: var(--dark-100);
     margin: 4px auto;
     transition: 0.4s;
+    display: block;
   }
 
   /* 切换状态：X */
@@ -90,8 +91,11 @@
   .dark-mode-toggle{
     position: fixed;
     right: 60px;
+    height: 38px;
+    width: 38px;
     top: 42px;
     z-index: 11;
+    box-sizing: border-box;
   }
 
   .mod-menu-toggle{
@@ -104,6 +108,7 @@
     border: 1px solid var(--dark-500);
     border-radius: 20px;
     background-color: var(--dark-900);
+    box-sizing: border-box;
     z-index: 11;
   }
 
