@@ -18,9 +18,10 @@ layout: base
 
 
   {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
+    <div class="brand-slong-container">
+      <div id="typewriter-text" class="typewriter blink"></div>
+      <p>(你可以給各格線指定一個固定的軌道大小，例如像素（pixel）)</p>
+    </div>
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
