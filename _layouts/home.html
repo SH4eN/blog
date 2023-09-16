@@ -33,6 +33,7 @@ layout: base
           <div class="card-author-nav">
             <span class="post-meta">{{ post.date | date: date_format }}</span>
           </div>
+          <p class="card-content"> {{ post.excerpt | date: date_format }} </p>
           {%- if site.show_excerpts -%}
             <p class="card-content"> {{ post.excerpt | date: date_format }} </p>
           {%- endif -%}
