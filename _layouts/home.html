@@ -34,7 +34,7 @@ layout: base
             <span class="post-meta">{{ post.date | date: date_format }}</span>
           </div>
           {%- if site.show_excerpts -%}
-            <p class="card-content"> {{ post.excerpt }} </p>
+            <p class="card-content"> {{ post.excerpt | date: date_format }} </p>
           {%- endif -%}
           <button class="card-btn">
             <a href="{{ post.url | relative_url }}">閱讀更多</a>
