@@ -105,6 +105,7 @@
     top: 42px;
     height: 38px;
     width: 38px;
+    padding: 0px 9px;
     border: 1px solid var(--dark-500);
     border-radius: 20px;
     background-color: var(--dark-900);
