@@ -67,7 +67,7 @@
   }
 
   .bar {
-    width: 90%;
+    width: 20px;
     height: 2px;
     background-color: var(--dark-100);
     margin: 4px auto;
