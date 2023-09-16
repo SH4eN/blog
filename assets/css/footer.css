@@ -1,0 +1,9 @@
+footer{
+  margin: 60px 0px;
+  text-align: right;
+}
+
+footer p{
+  font-size: .7rem;
+  color: var(--dark-600);
+}

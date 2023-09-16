@@ -1,0 +1,39 @@
+@import "normalize.css";
+@import "root.css";
+@import "bootstrap-grid.min.css";
+@import "menu.css";
+@import "footer.css";
+@import "index.css";
+@import "card.css";
+
+
+.container{
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color 0.6s ease-in-out;
+  background-color: var(--dark-100);
+}
+
+a {
+  color: var(--dark-900);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--dark-600);
+}
+
+.dark-mode {
+  background-color: var(--dark-900);
+  color:  var(--dark-100);
+}
+
+.dark-mode a {
+  color:  var(--dark-100);
+}
+
+.dark-mode a:hover{
+  color: var(--brand-color);
+}
