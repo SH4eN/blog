@@ -16,8 +16,8 @@ function myFunction() {
   var currentSrc = imgElement.getAttribute('src');
 
   if (currentSrc === 'icons/sun.svg') {
-    imgElement.setAttribute('src', '{{ "/icons/moon.svg" | relative_url }}');
+    imgElement.setAttribute('src', '../icons/moon.svg');
   } else {
-    imgElement.setAttribute('src', '{{ "/icons/sun.svg" | relative_url }}');
+    imgElement.setAttribute('src', '../icons/sun.svg');
   }
 }
