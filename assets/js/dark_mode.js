@@ -15,7 +15,7 @@ function myFunction() {
   var imgElement = document.getElementById('toggleImg');
   var currentSrc = imgElement.getAttribute('src');
 
-  if (currentSrc === 'icons/sun.svg') {
+  if (currentSrc === '/blog/icons/sun.svg') {
     imgElement.setAttribute('src', '/blog/icons/moon.svg');
   } else {
     imgElement.setAttribute('src', '/blog/icons/sun.svg');
