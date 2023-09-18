@@ -25,6 +25,10 @@ a:hover{
   color: var(--dark-600);
 }
 
+button{
+  touch-action: manipulation;
+}
+
 .dark-mode {
   background-color: var(--dark-900);
   color:  var(--dark-100);
