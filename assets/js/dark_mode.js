@@ -14,10 +14,23 @@ function myFunction() {
   element.classList.toggle("dark-mode");
   var imgElement = document.getElementById('toggleImg');
   var currentSrc = imgElement.getAttribute('src');
+  var isDarkMode = element.classList.contains("dark-mode");
 
-  if (currentSrc === '/blog/icons/sun.svg') {
-    imgElement.setAttribute('src', '/blog/icons/moon.svg');
+  if (isDarkMode) {
+    imgElement.setAttribute('src', 'icons/moon.svg');
   } else {
-    imgElement.setAttribute('src', '/blog/icons/sun.svg');
+    imgElement.setAttribute('src', 'icons/sun.svg');
   }
+
+  // 將 dark-mode 狀態保存到 localStorage
+  localStorage.setItem('darkMode', isDarkMode);
 }
+
+// 檢查 localStorage 中的 darkMode 狀態
+window.addEventListener('load', function () {
+  var savedDarkMode = localStorage.getItem('darkMode');
+  if (savedDarkMode === 'true') {
+    document.body.classList.add('dark-mode');
+    document.getElementById('toggleImg').setAttribute('src', 'icons/moon.svg');
+  }
+});
