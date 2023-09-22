@@ -17,9 +17,9 @@ function myFunction() {
   var isDarkMode = element.classList.contains("dark-mode");
 
   if (isDarkMode) {
-    imgElement.setAttribute('src', 'icons/moon.svg');
+    imgElement.setAttribute('src', '/blog/icons/moon.svg');
   } else {
-    imgElement.setAttribute('src', 'icons/sun.svg');
+    imgElement.setAttribute('src', '/blog/icons/sun.svg');
   }
 
   // 將 dark-mode 狀態保存到 localStorage
@@ -31,6 +31,6 @@ window.addEventListener('load', function () {
   var savedDarkMode = localStorage.getItem('darkMode');
   if (savedDarkMode === 'true') {
     document.body.classList.add('dark-mode');
-    document.getElementById('toggleImg').setAttribute('src', 'icons/moon.svg');
+    document.getElementById('toggleImg').setAttribute('src', '/blog/icons/moon.svg');
   }
 });
