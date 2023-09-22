@@ -17,3 +17,7 @@
   background-color: var(--brand-color); /* 选定部分的背景颜色，可以根据需要设置 */
   color: var( --dark-900); /* 选定文本的颜色，可以根据需要设置 */
 }
+
+body{
+  font-family: 'Arial' ,' Microsoft JhengHei', 'sans-serif ';
+}
