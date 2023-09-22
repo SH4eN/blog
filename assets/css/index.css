@@ -43,13 +43,40 @@
   margin: 0;
 }
 
+.card-container-title{
+  font-size: .8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  display: none;
+  padding: 12px 0px;
+}
+
+.card-container-title::before{
+  content: '[';
+  right: 8px;
+  bottom: 2px;
+  position: relative;
+}
+
+.card-container-title::after{
+  content: ']';
+  left: 8px;
+  bottom: 2px;
+  position: relative;
+}
+
 @media (max-width: 575px) {
 
+  .card-container-title{
+    display: block;
+  }
+
   .brand-slong-container {
-    font-size: 2.4em;
+    font-size: 1.8em;
     font-weight: 900;
-    width: 90%;
-    margin: 60px auto;
+    width: 100%;
+    margin: 60px 0px;
     text-align: left;
     height: 180px;
   }
