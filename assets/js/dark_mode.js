@@ -15,7 +15,7 @@ function myFunction() {
   let imgElement = document.getElementById('toggleImg');
   let currentSrc = imgElement.getAttribute('src');
 
-  if (currentSrc === 'icons/sun.svg') {
+  if (currentSrc === '/blog/icons/sun.svg') {
     imgElement.setAttribute('src', '/blog/icons/moon.svg');
     localStorage.setItem('darkMode', 'on');
   } else {
