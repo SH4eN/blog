@@ -10,27 +10,32 @@ function modMenu() {
 }
 
 function myFunction() {
-  var element = document.body;
+  let element = document.body;
   element.classList.toggle("dark-mode");
-  var imgElement = document.getElementById('toggleImg');
-  var currentSrc = imgElement.getAttribute('src');
-  
+  let imgElement = document.getElementById('toggleImg');
+  let currentSrc = imgElement.getAttribute('src');
+
   if (currentSrc === 'icons/sun.svg') {
     imgElement.setAttribute('src', '/blog/icons/moon.svg');
-    // 将 dark 模式状态存储在本地存储中
     localStorage.setItem('darkMode', 'on');
   } else {
     imgElement.setAttribute('src', '/blog/icons/sun.svg');
-    // 将 dark 模式状态存储在本地存储中
     localStorage.setItem('darkMode', 'off');
   }
 }
 
+
 // 在页面加载时，检查本地存储中的 dark 模式状态并应用
 window.onload = function () {
-  var darkMode = localStorage.getItem('darkMode');
-  if (darkMode === 'on') {
+  let darkMode = localStorage.getItem('darkMode');
+  let element = document.body;
+  let imgElement = document.getElementById('toggleImg');
+
+  if (darkMode === 'off') {
+    imgElement.setAttribute('src', '/blog/icons/sun.svg');
+    document.body.classList.remove('dark-mode');
+  }else{
+    imgElement.setAttribute('src', '/blog/icons/moon.svg');
     document.body.classList.add('dark-mode');
-    document.getElementById('toggleImg').setAttribute('src', '/blog/icons/moon.svg');
   }
 };
