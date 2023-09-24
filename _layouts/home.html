@@ -37,9 +37,11 @@ layout: base
           {%- if site.show_excerpts -%}
             <p class="card-content"> {{ post.excerpt | date: date_format }} </p>
           {%- endif -%}
-          <button class="card-btn">
-            <a href="{{ post.url | relative_url }}">閱讀更多</a>
-          </button>
+          <div class="card-footer">
+            <button class="card-btn">
+              <a href="{{ post.url | relative_url }}">閱讀更多</a>
+            </button>
+          </div>
         </div>
       </div>
       {%- endfor -%}
