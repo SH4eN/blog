@@ -16,28 +16,27 @@
 .blog-post-title{
   font-size: 2.4rem;
   line-height: 2.8rem;
-  margin: 2.4rem auto;
+  margin: 1.4rem auto;
 }
 
-.post h1,
 .post h2 {
-  font-size: 2.4rem;
-  line-height: 2.8rem;
-  margin: 2.4rem auto;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin: 1rem auto;
 }
 
 .post h3,
 .post h4 {
-  font-size: 2rem;
-  line-height: 2.4rem;
-  margin: 2rem auto;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin: 1rem auto;
 }
 
 .post h5,
 .post h6 {
-  font-size: 1.6rem;
-  line-height: 2rem;
-  margin: 1.6rem auto;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 1rem auto;
 }
 
 .post p{
