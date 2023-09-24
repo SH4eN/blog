@@ -92,10 +92,9 @@
 .card-btn a{
   display: block;
   height: 100%;
-  padding: 0px 12px;
+  padding: 6px 12px;
   box-sizing: border-box;
   font-size: .8rem;
-  line-height: 1.3rem;
   text-align: center;
   color: var(--dark-100);
 }
