@@ -19,24 +19,19 @@
   margin: 1.4rem auto;
 }
 
-.post h2 {
-  font-size: 1.8rem;
-  line-height: 2.2rem;
-  margin: 1rem auto;
-}
-
+.post h2,
 .post h3,
 .post h4 {
   font-size: 1.6rem;
   line-height: 2rem;
-  margin: 1rem auto;
+  margin: 3rem auto;
 }
 
 .post h5,
 .post h6 {
   font-size: 1.4rem;
   line-height: 1.8rem;
-  margin: 1rem auto;
+  margin: 3rem auto;
 }
 
 .post p{
