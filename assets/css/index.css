@@ -79,6 +79,7 @@
     margin: 60px auto;
     text-align: left;
     height: 180px;
+    touch-action: manipulation;
   }
 
   .brand-slong-container p{
