@@ -12,7 +12,6 @@
   display: inline-block;
   width: 100%;
   border: 1px solid var(--dark-500);
-  transition: .3s ease-in-out;
   border-radius: 12px;
   z-index: 9;
 }
