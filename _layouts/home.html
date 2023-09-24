@@ -48,7 +48,7 @@ layout: base
     </div>
 
     {% if site.paginate %}
-      <div class="pager">
+      <div class="pager" style="display: none;">
         <ul class="pagination">
         {%- if paginator.previous_page %}
           <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
