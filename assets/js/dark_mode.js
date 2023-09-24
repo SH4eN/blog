@@ -39,7 +39,3 @@ window.onload = function () {
     document.body.classList.add('dark-mode');
   }
 };
-
-document.addEventListener("dblclick", function(event) {
-  event.preventDefault();
-});
