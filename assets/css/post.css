@@ -70,6 +70,10 @@
     border-left: 12px solid var(--dark-900);
   }
 
+  .dark-mode .blog-post-title{
+    border-left: 12px solid var(--dark-100);
+  }
+
   .post h2,
   .post h3,
   .post h4 {
