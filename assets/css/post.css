@@ -16,7 +16,7 @@
 .blog-post-title{
   font-size: 2.4rem;
   line-height: 2.8rem;
-  margin: 1.4rem auto;
+  margin: 7.2rem auto;
 }
 
 .post h2,
@@ -24,20 +24,20 @@
 .post h4 {
   font-size: 1.6rem;
   line-height: 2rem;
-  margin: 3rem auto;
+  margin: 4.8rem auto;
 }
 
 .post h5,
 .post h6 {
   font-size: 1.4rem;
   line-height: 1.8rem;
-  margin: 3rem auto;
+  margin: 4.2rem auto;
 }
 
 .post p{
   font-size: 1rem;
   line-height: 1.6rem;
-  margin: 1rem auto;
+  margin: 3.2rem auto;
   text-align: justify;
 }
 
@@ -49,8 +49,6 @@
   list-style-type: square;
 }
 
-
-
 .post img{
   display: block;
   max-width: 100%;
@@ -58,4 +56,28 @@
   margin: 24px auto;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+@media (max-width: 575px) {
+
+  .blog-post-title{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin: 5.4rem auto;
+  }
+
+  .post h2,
+  .post h3,
+  .post h4 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin: 4.2rem auto;
+  }
+
+  .post h5,
+  .post h6 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 3.6rem auto;
+  }
 }
